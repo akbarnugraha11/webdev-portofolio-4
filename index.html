@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portofolio Akbar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ══ NAVBAR ══════════════════════════════════ -->
+    <nav class="navbar">
+      <div class="container-nav">
+        <div class="navbar__logo">
+          <span class="logo-icon">A</span>
+          <span class="logo-text">kbarStudio</span>
+        </div>
+
+        <ul class="navbar__links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li class="dropdown">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+            <div class="dropdown-content">
+              <a href="webdesign.png" target="blank">Web Design</a>
+              <a href="webdev.png" target="blank">Web Development</a>
+              <a href="brand.png" target="blank">Branding</a>
+            </div>
+          </li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#counter" class="nav-link">Counter</a></li>
+        </ul>
+
+        <div class="navbar__cta" style="display: flex; align-items: center; gap: 10px">
+          <a href="#contact" class="btn-primary">Get Started</a>
+          <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ══ HERO SECTION ════════════════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <span class="hero__badge">Available for Work</span>
+        <h1 class="hero__title">
+          Hai, saya
+          <span class="highlight">Akbar Nugraha</span>
+          <br />
+          <span class="hero__subtitle">Web Developer</span>
+        </h1>
+        <p class="hero__desc">
+          Saya membangun website yang cepat, responsif, dan tampak profesional. Mari buat sesuatu
+          yang luar biasa bersama.
+        </p>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn-primary">Lihat Portfolio</a>
+          <a href="#contact" class="btn-outline">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="hero__decoration">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+      </div>
+    </section>
+
+    <!-- ══ ABOUT SECTION ═══════════════════════════ -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-subtitle">Mari kenal saya lebih dekat</p>
+
+        <div class="about__content">
+          <div class="about__text">
+            <h3>Siapa saya?</h3>
+            <p>Saya adalah seorang mahasiswa FIKTI UMSU, saat ini saya sudah semester 4.</p>
+            <p>
+              Dengan keahlian di berbagai teknologi modern, saya siap membantu bisnis Anda
+              berkembang di era digital ini.
+            </p>
+            <div class="about__stats">
+              <div class="stat-item">
+                <h4>3+</h4>
+                <p>Projects Done</p>
+              </div>
+              <div class="stat-item">
+                <h4>2+</h4>
+                <p>Happy Clients</p>
+              </div>
+              <div class="stat-item">
+                <h4>4+</h4>
+                <p>Years Experience</p>
+              </div>
+            </div>
+          </div>
+          <div class="about__image">
+            <div class="image-container">
+              <img src="profil.png" alt="Akbar Nugraha - Web Developer" class="profile-image" />
+              <div class="image-decoration"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SKILLS SECTION ══════════════════════════ -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Keahlian Saya</h2>
+        <p class="section-subtitle">Teknologi yang saya kuasai</p>
+
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__icon">📄</div>
+            <h3>HTML5</h3>
+            <p>Semantic markup, aksesibilitas, dan struktur dokumen yang baik.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">🎨</div>
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, animasi, dan responsive design untuk semua layar.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 93%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>DOM manipulation, Fetch API, dan logika interaktif modern.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">🔗</div>
+            <h3>Git & GitHub</h3>
+            <p>Version control, branching, dan kolaborasi tim secara profesional.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">⚙️</div>
+            <h3>React</h3>
+            <p>Component-based development dengan hooks dan state management.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__icon">🚀</div>
+            <h3>Performance</h3>
+            <p>Optimasi loading, image compression, dan Core Web Vitals.</p>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 92%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SERVICES SECTION ════════════════════════ -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Layanan Saya</h2>
+        <p class="section-subtitle">Solusi digital untuk bisnis Anda</p>
+
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>
+              Membangun website yang responsif, cepat, dan user-friendly dengan teknologi terkini.
+            </p>
+            <a href="#contact" class="service-link">Pelajari Lebih →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Desain interface yang intuitif dan menarik untuk pengalaman pengguna terbaik.</p>
+            <a href="#contact" class="service-link">Pelajari Lebih →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Website yang sempurna di semua perangkat, dari mobile hingga desktop.</p>
+            <a href="#contact" class="service-link">Pelajari Lebih →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>Web Maintenance</h3>
+            <p>Dukungan teknis dan pemeliharaan berkelanjutan untuk website Anda.</p>
+            <a href="#contact" class="service-link">Pelajari Lebih →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PORTFOLIO SECTION ══════════════════════════════ -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="section-title">Portfolio Saya</h2>
+        <p class="section-subtitle">Beberapa project yang telah saya kerjakan</p>
+
+        <div class="portfolio__grid">
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="webdesign.png" alt="Web Design Project" class="placeholder-img" />
+            </div>
+            <div class="portfolio-info">
+              <h3>Web Design</h3>
+              <p class="portfolio-category">UI / UX Design</p>
+              <p>
+                Desain landing page modern dengan tampilan yang bersih, intuitif, dan responsif
+                untuk berbagai perangkat.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="webdev.png" alt="Web Development Project" class="placeholder-img" />
+            </div>
+            <div class="portfolio-info">
+              <h3>Web Development</h3>
+              <p class="portfolio-category">Front-End Development</p>
+              <p>
+                Pengembangan website profesional dengan teknologi terkini, performa tinggi, dan
+                tampilan yang memukau.
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="brand.png" alt="Branding Project" class="placeholder-img" />
+            </div>
+            <div class="portfolio-info">
+              <h3>Branding</h3>
+              <p class="portfolio-category">Brand Identity</p>
+              <p>
+                Pembuatan identitas merek yang kuat dan berkesan untuk membantu bisnis tampil
+                profesional di pasar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ COUNTER SECTION ════════════════════════════ -->
+    <section class="counter-section" id="counter">
+      <h2>Berapa Kali Kamu Minum Air Hari Ini?</h2>
+      <div class="counter-container">
+        <button id="btn-kurang" class="counter-btn">−</button>
+        <span id="angka-counter">0</span>
+        <button id="btn-tambah" class="counter-btn">+</button>
+      </div>
+      <p id="counter-pesan">Yuk mulai minum air!</p>
+    </section>
+
+    <!-- ══ CONTACT SECTION ═════════════════════════ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-subtitle">Mari diskusikan project Anda</p>
+
+        <div class="contact__content">
+          <div class="contact__info">
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <h4>Email</h4>
+                <p>
+                  <a href="mailto:akbardaulay1140@gmail.com" target="_blank">
+                    akbardaulay1140@gmail.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <h4>Telepon</h4>
+                <p><a href="tel:+6282280539623" target="_blank">+62 822 80539 623</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <h4>WhatsApp</h4>
+                <p><a href="https://wa.me/6282280539623" target="blank">+62 822-80539-623</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <h4>Alamat</h4>
+                <p>Tapanuli Tengah, Indonesia</p>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <h4>Follow Me</h4>
+              <div class="social-links">
+                <a href="#" class="social-link">Github</a>
+                <a
+                  href="https://www.instagram.com/akbardaulay1140/"
+                  class="social-link"
+                  target="sblank"
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form">
+            <section class="form-section">
+              <div class="form-container">
+                <input type="text" id="input-nama" placeholder="Nama lengkap" />
+                <input type="email" id="input-email" placeholder="Alamat email" />
+                <textarea id="input-pesan" placeholder="Pesan kamu..." rows="4"></textarea>
+                <button id="btn-kirim">Kirim Pesan</button>
+                <div id="form-feedback" class="feedback hidden"></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ══════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3>DevStudio</h3>
+            <p>Solusi web development profesional untuk bisnis Anda.</p>
+          </div>
+          <div class="footer__section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">UI/UX Design</a></li>
+              <li><a href="#services">Maintenance</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2026 AkbarStudio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
